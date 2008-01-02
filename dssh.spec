@@ -10,6 +10,7 @@ Source0: %{name}-%{version}.tar.bz2
 License: GPL
 Group: Networking/Remote access
 Url: http://dssh.subverted.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildarch: noarch
 requires: perl	
 
