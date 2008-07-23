@@ -1,6 +1,6 @@
 %define name dssh
 %define version 0.1
-%define release  %mkrel 1
+%define release  %mkrel 3
 
 Summary: Remote command via ssh
 Name: %{name}
