@@ -27,8 +27,8 @@ rm -rf $RPM_BUILD_ROOT
 mkdir -p %{buildroot}%{_mandir}/man1
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_sysconfdir}/dssh/node_groups
-cp -vf $RPM_BUILD_DIR/%name-%version/dssh %{buildroot}%{_bindir}
-cp -vf $RPM_BUILD_DIR/%name-%version/dssh.1 %{buildroot}%{_mandir}/man1
+cp -vf %{_builddir}/%name-%version/dssh %{buildroot}%{_bindir}
+cp -vf %{_builddir}/%name-%version/dssh.1 %{buildroot}%{_mandir}/man1
 
 cat > %{buildroot}%{_sysconfdir}/dssh/node_groups/ALL <<EOF
 # username@host:port
